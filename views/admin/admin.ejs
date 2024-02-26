@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Data</h1>
+    <ul>
+      <% data.forEach(item => { %>
+      <li>
+        First Name: <%= item.firstName %>, Last Name: <%= item.lastName %>, Date
+        of Birth: <%= item.dateOfBirth %>, Email: <%= item.email %>,Phone
+        Number: <%= item.phoneNumber %>, Address: <%= item.address%>
+      </li>
+      <!-- Add more fields as needed -->
+      <% }); %>
+    </ul>
+  </body>
+</html>

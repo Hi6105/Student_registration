@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      #role {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2%;
+        width: fit-content;
+      }
+      button {
+        appearance: button;
+        backface-visibility: hidden;
+        background-color: #405cf5;
+        border-radius: 6px;
+        border-width: 0;
+        box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+          rgba(50, 50, 93, 0.1) 0 2px 5px 0, rgba(0, 0, 0, 0.07) 0 1px 1px 0;
+        box-sizing: border-box;
+        color: #fff;
+        cursor: pointer;
+        font-family: -apple-system, system-ui, "Segoe UI", Roboto,
+          "Helvetica Neue", Ubuntu, sans-serif;
+        font-size: 100%;
+        font-weight: bold;
+        height: 44px;
+        line-height: 1.15;
+        margin: 12px 0 0;
+        outline: none;
+        overflow: hidden;
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+        text-transform: none;
+        transform: translateZ(0);
+        transition: all 0.2s, box-shadow 0.08s ease-in;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      button:disabled {
+        cursor: default;
+      }
+
+      button:focus {
+        box-shadow: rgba(50, 50, 93, 0.1) 0 0 0 1px inset,
+          rgba(50, 50, 93, 0.2) 0 6px 15px 0, rgba(0, 0, 0, 0.1) 0 2px 2px 0,
+          rgba(50, 151, 211, 0.3) 0 0 0 4px;
+      }
+      #admin {
+        margin-left: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="role">
+      <a href="/"><button>Student</button></a>
+      <a href="/login"><button id="admin">Admin</button></a>
+    </div>
+    <%- body %>
+
+    <script>
+      function loginpage() {}
+    </script>
+  </body>
+</html>
