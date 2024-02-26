@@ -18,7 +18,7 @@ router.post("/", async (req, res) => {
     if (result) res.send("Registration Successful.");
   } catch (err) {
     console.log(err);
-    res.send("Registration Unsuccessful");
+    res.send(err + "Registration Unsuccessful");
   }
 });
 
